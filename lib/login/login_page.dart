@@ -4,9 +4,9 @@ import 'package:flutter_provider/widget/dialog/loading_manager.dart';
 import 'package:provider/provider.dart';
 
 class LoginPage extends StatelessWidget {
-  TextEditingController _accountController = TextEditingController();
-  TextEditingController _passwordController = TextEditingController();
-  LoadingManager _loadingManager = LoadingManager();
+  final TextEditingController _accountController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
+  final LoadingManager _loadingManager = LoadingManager();
 
   void showMessage(BuildContext context, String msg) {
     if(msg.isNotEmpty) {
